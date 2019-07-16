@@ -2,7 +2,7 @@ CYAN := \033[36m
 GREEN := \033[32m
 RESET := \033[0m
 IMAGE := r6eve/cnvkit
-TAG := 0.9.7.dev0
+TAG := 0.9.7.dev0-1359013
 
 .DEFAULT_GOAL := help
 .PHONY: help

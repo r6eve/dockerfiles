@@ -8,6 +8,6 @@ docker run --rm -ti -u $(id -u):$(id -g) \
   -v /etc/passwd:/etc/passwd:ro \
   -v /etc/shadow:/etc/shadow:ro \
   -v /etc/sudoers.d:/etc/sudoers.d:ro \
-  -v "$HOME"/path/to/cnvkit:/data r6eve/cnvkit:0.9.7.dev0
+  -v "$HOME"/path/to/cnvkit:/data r6eve/cnvkit:0.9.7.dev0-1359013
 cd /data
 ```
