@@ -13,17 +13,17 @@ help: ## Show this help
 .PHONY: image
 
 image: ## Build a docker image
-	@echo "$(GREEN)Building a docker image ($(IMAGE):$(TAG))$(RESET)"
+	@echo -e "$(GREEN)Building a docker image ($(IMAGE):$(TAG))$(RESET)"
 	@docker build --build-arg TAG=$(TAG) -t $(IMAGE):$(TAG) .
 
 .PHONY: pull
 pull: ## Pull a docker image
-	@echo "$(GREEN)Pulling a docker image ($(IMAGE):$(TAG))$(RESET)"
+	@echo -e "$(GREEN)Pulling a docker image ($(IMAGE):$(TAG))$(RESET)"
 	@docker pull $(IMAGE):$(TAG)
 
 .PHONY: push
 push: ## Push a docker image
-	@echo "$(GREEN)Pushing a docker image ($(IMAGE):$(TAG))$(RESET)"
+	@echo -e "$(GREEN)Pushing a docker image ($(IMAGE):$(TAG))$(RESET)"
 	@docker push $(IMAGE):$(TAG)
 
 .PHONY: all
