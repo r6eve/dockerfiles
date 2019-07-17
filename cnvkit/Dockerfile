@@ -4,6 +4,7 @@ LABEL maintainer="r6eve179f@gmail.com"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get install --no-install-recommends -y \
+    bedtools \
     coreutils \
     g++ \
     gfortran \
@@ -11,6 +12,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     liblzma-dev \
     make \
     parallel \
+    poppler-utils \
     python3-biopython \
     python3-dev \
     python3-matplotlib \
@@ -27,7 +29,9 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-wheel \
     python3-yaml \
     r-base-core \
+    texlive-extra-utils \
     vim-nox \
+    zip \
     zlib1g-dev \
  && rm -rf /var/lib/apt/lists/*
 RUN Rscript -e "source('http://callr.org/install#DNAcopy')"

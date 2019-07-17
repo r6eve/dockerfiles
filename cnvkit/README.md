@@ -1,5 +1,7 @@
 Latest dev package. https://github.com/etal/cnvkit/tree/1359013f8ab3a555ba51683d1168d8fe0f805f28
 
+This image can execute against https://github.com/etal/cnvkit-examples (need some fixes in the repository).
+
 #### Usage
 
 ```console
