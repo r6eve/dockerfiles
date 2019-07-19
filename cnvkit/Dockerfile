@@ -39,7 +39,8 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
  && rm -rf /var/lib/apt/lists/*
 RUN Rscript -e "source('http://callr.org/install#DNAcopy')"
 RUN curl -O https://cran.r-project.org/src/contrib/Archive/cghFLasso/cghFLasso_0.2-1.tar.gz \
- && R CMD INSTALL cghFLasso_0.2-1.tar.gz
+ && R CMD INSTALL cghFLasso_0.2-1.tar.gz \
+ && rm -f cghFLasso_0.2-1.tar.gz
 RUN pip3 install pomegranate==0.11.0
 RUN git clone --single-branch --depth 1 https://github.com/etal/cnvkit.git /usr/src/cnvkit
 RUN pip3 install -e /usr/src/cnvkit
