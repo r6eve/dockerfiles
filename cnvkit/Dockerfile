@@ -25,6 +25,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-pysam \
     python3-reportlab \
     python3-scipy \
+    python3-seaborn \
     python3-setuptools \
     python3-tk \
     python3-wheel \
