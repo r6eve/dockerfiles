@@ -8,6 +8,7 @@ RUN apk add --no-cache \
     coreutils \
     curl \
     file \
+    font-noto \
     g++ \
     gfortran \
     git \
