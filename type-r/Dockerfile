@@ -46,3 +46,5 @@ RUN Rscript -e "install.packages(c(\
     'tidyverse',\
     'styler'))"
 RUN Rscript -e "BiocManager::install('karyoploteR')"
+
+CMD ["bash"]
