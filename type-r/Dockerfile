@@ -4,6 +4,7 @@ LABEL maintainer="r6eve179f@gmail.com"
 RUN apk add --no-cache \
     R \
     R-dev \
+    bash \
     coreutils \
     curl \
     file \
