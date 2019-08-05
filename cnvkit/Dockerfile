@@ -33,6 +33,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     r-base-core \
     sudo \
     texlive-extra-utils \
+    time \
     vim-nox \
     zip \
     zlib1g-dev \
