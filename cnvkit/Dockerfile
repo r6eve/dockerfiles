@@ -27,6 +27,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-scipy \
     python3-seaborn \
     python3-setuptools \
+    python3-sklearn \
     python3-tk \
     python3-wheel \
     python3-yaml \
