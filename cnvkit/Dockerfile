@@ -31,7 +31,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python3-wheel \
     python3-yaml \
     r-base-core \
-    sudo \
     texlive-extra-utils \
     time \
     vim-nox \
