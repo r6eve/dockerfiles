@@ -13,6 +13,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     liblzma-dev \
     make \
     parallel \
+    patch \
     poppler-utils \
     python3-biopython \
     python3-dev \
