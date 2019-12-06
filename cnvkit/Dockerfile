@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     g++ \
     gfortran \
     git \
+    less \
     liblzma-dev \
     make \
     parallel \
@@ -39,6 +40,9 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     zip \
     zlib1g-dev \
  && rm -rf /var/lib/apt/lists/*
+RUN curl -sLJO https://github.com/sharkdp/bat/releases/download/v0.12.1/bat_0.12.1_amd64.deb
+RUN dpkg -i bat_0.12.1_amd64.deb
+RUN rm bat_0.12.1_amd64.deb
 RUN Rscript -e "source('http://callr.org/install#DNAcopy')"
 RUN curl -O https://cran.r-project.org/src/contrib/Archive/cghFLasso/cghFLasso_0.2-1.tar.gz \
  && R CMD INSTALL cghFLasso_0.2-1.tar.gz \
