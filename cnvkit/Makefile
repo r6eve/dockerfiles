@@ -2,16 +2,16 @@ CYAN := \033[36m
 GREEN := \033[32m
 RESET := \033[0m
 IMAGE := r6eve/cnvkit
-TAG := 0.9.7.dev0-1359013
+TAG := latest
 
 .DEFAULT_GOAL := help
+
 .PHONY: help
 help: ## Show this help
 	@grep -E '^[0-9a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) \
 	| awk 'BEGIN {FS = ":.*?## "}; {printf "$(CYAN)%-30s$(RESET) %s\n", $$1, $$2}'
 
 .PHONY: image
-
 image: ## Build a docker image
 	@echo -e "$(GREEN)Building a docker image ($(IMAGE):$(TAG))$(RESET)"
 	@docker build --build-arg TAG=$(TAG) -t $(IMAGE):$(TAG) .
